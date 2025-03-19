@@ -9,7 +9,7 @@ import {Link , useNavigate} from "react-router-dom";
 
 export default function Navbar() {
   return (
-    <header className="flex h-20 w-full shrink-0 items-center px-4 md:px-6">
+    <header className="flex h-20 w-full shrink-0 items-center   px-4 md:px-6">
       <Sheet>
         <SheetTrigger asChild>
           <Button variant="outline" size="icon" className="lg:hidden">
@@ -24,7 +24,7 @@ export default function Navbar() {
           </Link>
           <div className="grid gap-2 py-6">
             <Link
-              href=""
+              to=""
               className="flex w-full items-center py-2 text-lg font-semibold"
               prefetch={false}
             >
@@ -32,7 +32,7 @@ export default function Navbar() {
             </Link>
 
             <Link
-              href="/research"
+              to="/research"
               className="flex w-full items-center py-2 text-lg font-semibold"
               prefetch={false}
             >
@@ -40,7 +40,7 @@ export default function Navbar() {
             </Link>
 
             <Link
-              href="/mentorship"
+              to="/mentorship"
               className="flex w-full items-center py-2 text-lg font-semibold"
               prefetch={false}
             >
@@ -48,7 +48,7 @@ export default function Navbar() {
             </Link>
 
             <Link
-              href="teaching-activites"
+              to="teaching-activites"
               className="flex w-full items-center py-2 text-lg font-semibold"
               prefetch={false}
             >

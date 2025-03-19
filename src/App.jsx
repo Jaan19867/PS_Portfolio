@@ -12,7 +12,11 @@ function App() {
     <>
       <div>
         <BrowserRouter basename="/PS_Portfolio">
+         <div className="border border-gray-500">
+
           <Navbar />
+          
+         </div>
           <Routes>
             <Route path="/" element={<Home />}></Route>
             <Route path="/home" element={<Home />}></Route>
