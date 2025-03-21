@@ -286,7 +286,7 @@ function Mentorship() {
             Mentorship
           </h1>
           <p className="text-gray-600 text-center mb-12 text-lg">
-            Students guided by Prof. Devang J Joshi
+            Students guided by Priya Singh 
           </p>
 
           {/* Undergraduate Students Section */}

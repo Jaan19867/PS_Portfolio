@@ -432,10 +432,10 @@ function Responsibilities() {
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <h1 className="text-3xl md:text-4xl font-bold text-center mb-2">
-            Responsibilities
+            Administrative Activities
           </h1>
           <p className="text-gray-600 text-center mb-12 text-lg">
-            Contributions of Prof. Devang J Joshi in various roles
+            Contributions of Priya Singh in various roles
           </p>
 
           {/* Workshops Organized Section */}

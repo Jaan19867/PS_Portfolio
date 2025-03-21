@@ -162,7 +162,7 @@ function TeachingActivities() {
             Teaching Activities
           </h1>
           <p className="text-gray-600 text-center mb-12 text-lg">
-            Subjects taught by Prof. Devang J Joshi
+            Subjects taught by Priya Singh 
           </p>
 
           {/* Undergraduate Subjects Section */}

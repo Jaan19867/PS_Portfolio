@@ -48,7 +48,7 @@ export default function Navbar() {
                     to="/responsibilities"
                     className="text-lg font-medium hover:text-blue-600"
                   >
-                    Responsibilities
+                    Administrative Activities
                   </Link>
                 </div>
               </div>
@@ -97,7 +97,7 @@ export default function Navbar() {
             to="/responsibilities"
             className="text-gray-700 hover:text-blue-600 font-medium transition"
           >
-            Responsibilities
+            Administrative Activities
           </Link>
         </nav>
       </div>

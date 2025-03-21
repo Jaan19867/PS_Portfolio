@@ -359,7 +359,7 @@ function Research() {
               Publications
             </h1>
             <p className="text-gray-600 text-center mb-8 text-lg">
-              Prof. Devang J Joshi's academic contributions and research work
+              Priya Singh's academic contributions and research work
             </p>
 
             {/* Tabs for Conferences and Journals */}
