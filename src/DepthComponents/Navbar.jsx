@@ -1,119 +1,109 @@
-/**
- * v0 by Vercel.
- * @see https://v0.dev/t/lJwnQlHSEBA
- * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
- */
 import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet"
 import { Button } from "@/components/ui/button"
-import {Link , useNavigate} from "react-router-dom"; 
+import { Link } from "react-router-dom"
 
 export default function Navbar() {
   return (
-    <header className="flex h-20 w-full shrink-0 items-center px-4 md:px-6">
-      <div className="flex items-center justify-between w-full lg:w-auto">
-        <Sheet>
-          <SheetTrigger asChild>
-            <Button variant="outline" size="icon" className="lg:hidden">
-              <MenuIcon className="h-6 w-6" />
-              <span className="sr-only">Toggle navigation menu</span>
-            </Button>
-          </SheetTrigger>
-          <SheetContent side="left">
-            <Link href="#" className="mr-6 flex" prefetch={false}>
-              <MountainIcon className="h-6 w-6" />
-              <span className="sr-only">Acme Inc</span>
-            </Link>
-            <div className="grid gap-2 py-6">
-              <Link
-                to=""
-                className="flex w-full items-center py-2 text-lg font-semibold"
-                prefetch={false}
-              >
-                Home
-              </Link>
-              <Link
-                to="/research"
-                className="flex w-full items-center py-2 text-lg font-semibold"
-                prefetch={false}
-              >
-                Research
-              </Link>
-              <Link
-                to="/mentorship"
-                className="flex w-full items-center py-2 text-lg font-semibold"
-                prefetch={false}
-              >
-                Mentorship
-              </Link>
-              <Link
-                to="teaching-activites"
-                className="flex w-full items-center py-2 text-lg font-semibold"
-                prefetch={false}
-              >
-                Teaching-Activities
-              </Link>
-              <Link
-                href="/responsibilities"
-                className="flex w-full items-center py-2 text-lg font-semibold"
-                prefetch={false}
-              >
-                Responsibilities
-              </Link>
-            </div>
-          </SheetContent>
-        </Sheet>
+    <header className="bg-white shadow-md">
+      <div className="container mx-auto px-4 md:px-6 flex h-20 items-center justify-between">
+        {/* Mobile View: Menu Icon + Name */}
+        <div className="flex items-center lg:hidden space-x-4">
+          <Sheet>
+            <SheetTrigger asChild>
+              <Button variant="outline" size="icon" className="lg:hidden">
+                <MenuIcon className="h-6 w-6" />
+                <span className="sr-only">Toggle navigation menu</span>
+              </Button>
+            </SheetTrigger>
 
-        <div className="lg:hidden text-left text-2xl">
-          <h2 className="font-semibold">Priya Singh</h2>
-         
+            <SheetContent side="left" className="w-64">
+              <div className="p-4">
+                <div className="text-2xl font-bold mb-6">Priya Singh</div>
+                <div className="grid gap-4">
+                  <Link
+                    to="/"
+                    className="text-lg font-medium hover:text-blue-600"
+                  >
+                    Home
+                  </Link>
+                  <Link
+                    to="/research"
+                    className="text-lg font-medium hover:text-blue-600"
+                  >
+                    Research
+                  </Link>
+                  <Link
+                    to="/mentorship"
+                    className="text-lg font-medium hover:text-blue-600"
+                  >
+                    Mentorship
+                  </Link>
+                  <Link
+                    to="/teaching-activities"
+                    className="text-lg font-medium hover:text-blue-600"
+                  >
+                    Teaching Activities
+                  </Link>
+                  <Link
+                    to="/responsibilities"
+                    className="text-lg font-medium hover:text-blue-600"
+                  >
+                    Responsibilities
+                  </Link>
+                </div>
+              </div>
+            </SheetContent>
+          </Sheet>
+
+          {/* Display Professor's Name */}
+          <div className="text-lg font-semibold text-gray-800">Priya Singh</div>
         </div>
-      </div>
 
-      <Link href="#" className="mr-6 hidden lg:flex" prefetch={false}>
-        <MountainIcon className="h-6 w-6" />
-        <span className="sr-only">Acme Inc</span>
-      </Link>
-      <nav className="ml-auto hidden lg:flex gap-6">
+        {/* Desktop View: Logo */}
         <Link
           to="/"
-          className="group inline-flex h-9 w-max items-center justify-center rounded-md bg-white px-4 py-2 text-sm font-medium transition-colors hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900 focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-gray-100/50 data-[state=open]:bg-gray-100/50 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus:bg-gray-800 dark:focus:text-gray-50 dark:data-[active]:bg-gray-800/50 dark:data-[state=open]:bg-gray-800/50"
-          prefetch={false}
+          className="text-2xl font-bold text-gray-800 hover:text-blue-600 hidden lg:block"
         >
-          Home
+          Priya Singh
         </Link>
-        <Link
-          to="/research"
-          className="group inline-flex h-9 w-max items-center justify-center rounded-md bg-white px-4 py-2 text-sm font-medium transition-colors hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900 focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-gray-100/50 data-[state=open]:bg-gray-100/50 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus:bg-gray-800 dark:focus:text-gray-50 dark:data-[active]:bg-gray-800/50 dark:data-[state=open]:bg-gray-800/50"
-          prefetch={false}
-        >
-          Research
-        </Link>
-        <Link
-          to="/mentorship"
-          className="group inline-flex h-9 w-max items-center justify-center rounded-md bg-white px-4 py-2 text-sm font-medium transition-colors hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900 focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-gray-100/50 data-[state=open]:bg-gray-100/50 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus:bg-gray-800 dark:focus:text-gray-50 dark:data-[active]:bg-gray-800/50 dark:data-[state=open]:bg-gray-800/50"
-          prefetch={false}
-        >
-          Mentorship
-        </Link>
-        <Link
-          to="/teaching-activities"
-          className="group inline-flex h-9 w-max items-center justify-center rounded-md bg-white px-4 py-2 text-sm font-medium transition-colors hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900 focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-gray-100/50 data-[state=open]:bg-gray-100/50 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus:bg-gray-800 dark:focus:text-gray-50 dark:data-[active]:bg-gray-800/50 dark:data-[state=open]:bg-gray-800/50"
-          prefetch={false}
-        >
-          Teaching-Activities
-        </Link>
-        <Link
-          to="/responsibilities"
-          className="group inline-flex h-9 w-max items-center justify-center rounded-md bg-white px-4 py-2 text-sm font-medium transition-colors hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900 focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-gray-100/50 data-[state=open]:bg-gray-100/50 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus:bg-gray-800 dark:focus:text-gray-50 dark:data-[active]:bg-gray-800/50 dark:data-[state=open]:bg-gray-800/50"
-          prefetch={false}
-        >
-          Responsibilities
-        </Link>
-      </nav>
+
+        {/* Desktop Menu */}
+        <nav className="hidden lg:flex items-center space-x-8">
+          <Link
+            to="/"
+            className="text-gray-700 hover:text-blue-600 font-medium transition"
+          >
+            Home
+          </Link>
+          <Link
+            to="/research"
+            className="text-gray-700 hover:text-blue-600 font-medium transition"
+          >
+            Research
+          </Link>
+          <Link
+            to="/mentorship"
+            className="text-gray-700 hover:text-blue-600 font-medium transition"
+          >
+            Mentorship
+          </Link>
+          <Link
+            to="/teaching-activities"
+            className="text-gray-700 hover:text-blue-600 font-medium transition"
+          >
+            Teaching Activities
+          </Link>
+          <Link
+            to="/responsibilities"
+            className="text-gray-700 hover:text-blue-600 font-medium transition"
+          >
+            Responsibilities
+          </Link>
+        </nav>
+      </div>
     </header>
   )
 }
-
 
 function MenuIcon(props) {
   return (
@@ -132,25 +122,6 @@ function MenuIcon(props) {
       <line x1="4" x2="20" y1="12" y2="12" />
       <line x1="4" x2="20" y1="6" y2="6" />
       <line x1="4" x2="20" y1="18" y2="18" />
-    </svg>
-  )
-}
-
-function MountainIcon(props) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="m8 3 4 8 5-5 5 15H2L8 3z" />
     </svg>
   )
 }
