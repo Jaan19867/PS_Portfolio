@@ -1,6 +1,6 @@
 import React from "react"
 import Navbar from "@/DepthComponents/Navbar"
-import priyasing from "@/assets/priyasingh.jpg"
+import priyasing from "@/assets/priyasinghh.jpeg"
 
 function Home() {
   return (
@@ -16,17 +16,36 @@ function Home() {
                 Priya Singh
               </h1>
               <h2 className="text-xl md:text-2xl font-medium text-blue-700">
-                Professor, Department of Software Engineering 
+                Professor, Department of Software Engineering
               </h2>
               <div className="h-1 w-32 bg-blue-600 mt-2"></div>
             </div>
 
             <div className="prose prose-lg max-w-none">
               <p className="text-gray-700 leading-relaxed">
-                Dedicated computer science professor with expertise in [Your
-                Professor's Specializations]. Research focused on advancing
-                [specific research area] with applications in [relevant
-                industries/fields].
+                I am an Assistant Professor in the Department of Software
+                Engineering at Delhi Technological University (DTU), where I
+                specialize in Deep Learning, Machine Learning, Computer Vision,
+                Natural Language Processing, and AI for Software Engineering.
+                <br />
+                With over 4.5 years of teaching and research experience at DTU,
+                I have mentored students and researchers, guiding them in
+                cutting-edge AI-driven software solutions. Before transitioning
+                to academia, I worked as a Software Developer at Oracle for 2.5
+                years, gaining hands-on experience in software design,
+                development, and optimization. My industry background allows me
+                to integrate theoretical concepts with real-world applications,
+                preparing students for both research and industry challenges.
+                <br /> I thrive to integrate industry insights with
+                research-driven methodologies to bridge the gap between theory
+                and practical applications. I have authored several journal and
+                conference publications in reputed venues.
+                <br />I am committed to fostering innovation in AI-driven
+                software solutions and mentoring students in cutting-edge
+                research in the field of ML research. Through active
+                collaborations with academia and industry, I strive to push the
+                boundaries of AI applications in software engineering, security.
+                computer vision, and applications of deep learning.
               </p>
             </div>
 
@@ -57,16 +76,20 @@ function Home() {
                       href="mailto:piyushg@eduvance.in"
                       className="ml-2 text-blue-600 hover:text-blue-800 hover:underline"
                     >
-                      piyushg@eduvance.in
+                      priya.singh.academia@gmail.com/Hey2025*
                     </a>
                   </li>
                   <li className="flex items-center">
                     <span className="text-gray-600">University:</span>
-                    <span className="ml-2">Eduvance</span>
+                    <span className="ml-2">
+                      Delhi Technological University{" "}
+                    </span>
                   </li>
                   <li className="flex items-center">
                     <span className="text-gray-600">Office:</span>
-                    <span className="ml-2">CS Department, Room ###</span>
+                    <span className="ml-2">
+                      Software Engineering Department{" "}
+                    </span>
                   </li>
                 </ul>
               </div>
@@ -92,7 +115,7 @@ function Home() {
                 </h3>
                 <div className="flex flex-wrap gap-2">
                   <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">
-                    IEEE
+                    IEEE member id- 99272381
                   </span>
                   <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">
                     ACM
@@ -125,7 +148,7 @@ function Home() {
               </h3>
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
                 <a
-                  href="https://scholar.google.com/"
+                  href="https://scholar.google.com/citations?hl=en&user=7ohLH40AAAAJ"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex flex-col items-center p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
@@ -145,7 +168,7 @@ function Home() {
                   </span>
                 </a>
                 <a
-                  href="https://www.scopus.com/"
+                  href="https://www.scopus.com/authid/detail.uri?authorId=57703196400"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex flex-col items-center p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
@@ -153,7 +176,7 @@ function Home() {
                   <span className="text-blue-600 font-medium">Scopus</span>
                 </a>
                 <a
-                  href="https://www.researchgate.net/"
+                  href=" https://www.researchgate.net/profile/Priya-Singh-64?ev=hdr_xprf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex flex-col items-center p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
@@ -163,7 +186,7 @@ function Home() {
                   </span>
                 </a>
                 <a
-                  href="https://www.linkedin.com/"
+                  href="https://www.linkedin.com/in/priyasingh23294/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex flex-col items-center p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
